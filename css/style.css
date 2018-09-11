@@ -16,6 +16,7 @@
     color: white;
     padding: 100px 0 80px 0;
     cursor: default;
+    text-align: center;
 }
 
 .header .background {
@@ -96,6 +97,7 @@
     background-color: #1abc9c;
     color: white;
     cursor: pointer;
+    text-align: left;
 }
 
 .header .subscribe label[for="submit"] .arrow {
