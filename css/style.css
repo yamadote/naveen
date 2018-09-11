@@ -185,6 +185,85 @@
     background-position: -41px 1px;
 }
 
+.section {
+    cursor: default;
+    text-align: center;
+    padding: 60px 0 60px 0;
+}
+
+.section .icon {
+    background-image: url(../img/icons.png);
+    background-size: auto 60px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.section .smile {
+    background-position: 0 0;
+}
+
+.section .devises {
+    background-position: -60px 0;
+}
+
+.section .presentation {
+    background-position: -127px 0;
+}
+
+.section .bulb {
+    background-position: -186px 0;
+}
+
+.section .description { /*.header .description*/
+    font: bold 10px 'Roboto', sans-serif;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    color: #a5a5a5;
+}
+
+.section h2 { /*.header .title*/
+    font: 52px 'Roboto', sans-serif;
+    margin-bottom: 70px;
+
+    color: #4c4c4c;
+}
+
+.section h2 span {
+    color: #1abc9c;
+}
+
+.section .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.section .list .item-3 {
+    width: 300px;
+}
+
+.section .list .item {
+    margin-bottom: 40px;
+}
+
+.section .list .item h3 {
+    font: 22px 'Roboto', sans-serif;
+    color: #4c4c4c;
+    margin-bottom: 20px;
+}
+
+.section .list .item p {
+    font: 13px 'Roboto', sans-serif;
+    line-height: 20px;
+    color: #b0b1b3;
+}
+
 /* .hide-text {
     text-indent: 100%;
     white-space: nowrap;
