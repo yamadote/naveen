@@ -192,29 +192,29 @@
 }
 
 .section .icon {
-    background-image: url(../img/icons.png);
-    background-size: auto 60px;
-    background-repeat: no-repeat;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin: 0 auto;
     margin-bottom: 30px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .section .smile {
-    background-position: 0 0;
+    background-image: url(../img/icons/smile.png);
 }
 
 .section .devises {
-    background-position: -60px 0;
+    background-image: url(../img/icons/devises.png);
 }
 
 .section .presentation {
-    background-position: -127px 0;
+    background-image: url(../img/icons/presentation.png);
 }
 
 .section .bulb {
-    background-position: -186px 0;
+    background-image: url(../img/icons/bulb.png);
 }
 
 .section .description { /*.header .description*/
