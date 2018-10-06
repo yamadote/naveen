@@ -12,7 +12,6 @@
 .header {
     position: relative;
     overflow: hidden;
-    /* background-color: #7a7a7a; */
     color: white;
     padding: 100px 0 80px 0;
     cursor: default;
@@ -211,26 +210,6 @@
     background-repeat: no-repeat;
 }
 
-.section .smile {
-    background-image: url(../img/icons/smile.png);
-}
-
-.section .devises {
-    background-image: url(../img/icons/devises.png);
-}
-
-.section .presentation {
-    background-image: url(../img/icons/presentation.png);
-}
-
-.section .bulb {
-    background-image: url(../img/icons/bulb.png);
-}
-
-.section .doc {
-    background-image: url(../img/icons/doc.png);
-}
-
 .section .description { /*.header .description*/
     font: bold 10px 'Roboto', sans-serif;
     letter-spacing: 6px;
@@ -258,24 +237,36 @@
     align-content: center;
 }
 
-.section .list .item-3 {
-    width: 300px;
-}
-
-.section .list .item-2-3 {
-    width: 600px;
-}
-
-.section .list .item-1-3 {
-    width: 300px;
-}
-
 .section .list .item {
     margin-bottom: 40px;
 }
 
+.section.features .list .item-3 {
+    width: 300px;
+}
+
+.section.features .list .item h3 {
+    font: 22px 'Roboto', sans-serif;
+    color: #4c4c4c;
+    margin-bottom: 20px;
+}
+
+.section.features .list .item p {
+    font: 13px 'Roboto', sans-serif;
+    line-height: 20px;
+    color: #b0b1b3;
+}
+
 .section.content .list .item {
     height: 400px;
+}
+
+.section.content .list .item-2-3 {
+    width: 600px;
+}
+
+.section.content .list .item-1-3 {
+    width: 300px;
 }
 
 .section.content .list .item.slider {
@@ -391,23 +382,63 @@
     color: #939598;
 }
 
-.section .list .item h3 {
+.section.services {
+    background-color: rgb(247, 247, 247);
+}
+
+.section.services .list .item-3 {
+    position: relative;
+    width: 230px;
+    height: 150px;
+    padding: 20px 30px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+}
+
+.section.services .item h3 {
     font: 22px 'Roboto', sans-serif;
     color: #4c4c4c;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-.section .list .item p {
-    font: 13px 'Roboto', sans-serif;
-    line-height: 20px;
-    color: #b0b1b3;
+.section.services .item .icon {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 
-/* .hide-text {
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-} */
+.section.services .item ul {
+    text-align: left;
+    font: 12px 'Roboto', sans-serif;
+}
+
+.section.services .item ul li {
+    margin-bottom: 5px;
+    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.section.services .item ul li a {
+    display: block;
+    padding: 8px 12px;
+    color: black;
+    text-decoration: none;
+}
+
+.section.services .item ul li:hover {
+    background-color:  #f2f2f2;
+}
+
+.section.services .item .icon {
+    margin-top: 40px;
+}
+
+.section.services .item:hover h3{
+    font-weight: bold;
+}
 
 .clear-fix {
     content: "";
@@ -503,4 +534,61 @@
 
 .social li a.dd {
     background-image: url(../img/social/dd.png);
+}
+
+
+.icon.smile {
+    background-image: url(../img/icons/smile.png);
+}
+
+.icon.devises {
+    background-image: url(../img/icons/devises.png);
+}
+
+.icon.presentation {
+    background-image: url(../img/icons/presentation.png);
+}
+
+.icon.bulb {
+    background-image: url(../img/icons/bulb.png);
+}
+
+.icon.doc {
+    background-image: url(../img/icons/doc.png);
+}
+
+.icon.par {
+    background-image: url("../img/icons/pencil and ruler.png");
+}
+
+.icon.video {
+    background-image: url("../img/icons/video.png");
+}
+
+.animate-text-to-left {
+    width: 100%;
+    white-space: nowrap;
+    transition: width .8s ease;
+}
+
+.animate-text-to-left-hover:hover .animate-text-to-left {
+    width: 0;
+}
+
+.animate-show{
+    transition: opacity 0.3s linear;
+    opacity: 1;
+}
+
+.animate-show-hover:hover .animate-show {
+    opacity: 0;
+}
+
+.animate-hidden{
+    transition: opacity 0.3s linear;
+    opacity: 0;
+}
+
+.animate-hidden-hover:hover .animate-hidden {
+    opacity: 1;
 }
