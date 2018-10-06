@@ -397,6 +397,9 @@
 }
 
 .section.services .item ul {
+    position: absolute;
+    left: 30px;
+    right: 30px;
     text-align: left;
     font: 12px 'Roboto', sans-serif;
 }
@@ -418,7 +421,7 @@
 }
 
 .section.services .item .icon {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .section.services .item:hover h3{
@@ -548,6 +551,30 @@
 
 .icon.video {
     background-image: url("../img/icons/video.png");
+}
+
+.icon.gray {
+    filter: invert(29%) sepia(1%) saturate(1056%) hue-rotate(57deg) brightness(87%) contrast(82%);
+}
+
+.icon.blue {
+    filter: invert(47%) sepia(23%) saturate(3230%) hue-rotate(160deg) brightness(94%) contrast(105%);
+}
+
+.icon.green {
+    filter: invert(99%) sepia(3%) saturate(6697%) hue-rotate(20deg) brightness(79%) contrast(111%);
+}
+
+.icon.purple {
+    filter: invert(60%) sepia(25%) saturate(4905%) hue-rotate(227deg) brightness(86%) contrast(92%);
+}
+
+.icon.tomato {
+    filter: invert(48%) sepia(16%) saturate(1336%) hue-rotate(314deg) brightness(86%) contrast(90%);
+}
+
+.icon.pink {
+    filter: invert(43%) sepia(87%) saturate(3280%) hue-rotate(311deg) brightness(97%) contrast(95%);
 }
 
 .animate-text-to-left {
