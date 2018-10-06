@@ -341,8 +341,6 @@
 
 .section.content .list .item .description .message {
     display: none;
-    color: #4c4c4c;
-    text-transform: none;
 }
 
 .section.content .list .item .description label ,
@@ -378,6 +376,10 @@
     color: #4c4c4c;
     letter-spacing: 1px;
     line-height: 22px;
+    color: #4c4c4c;
+    text-transform: none;
+    height: 87px;
+    overflow-x: auto;
 }
 
 .section.content .list .item .additionally {
