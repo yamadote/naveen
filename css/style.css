@@ -166,6 +166,18 @@
     height: 30px;
 }
 
+.nav-panel .social .social-hidden {
+    width: 0;
+    transition: width .8s ease;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.nav-panel .social:hover .social-hidden {
+    width: 235px;
+}
+
+
 .nav-panel .social .social-hidden li:first-child {
     padding-left: 11px;
 }
@@ -590,17 +602,6 @@
 
 .animate-text-to-left-hover:hover .animate-text-to-left {
     width: 0;
-}
-
-.animate-width-0-235 {
-    width: 0;
-    transition: width .8s ease;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.animate-width-0-235-hover:hover .animate-width-0-235 {
-    width: 235px;
 }
 
 .animate-show{
