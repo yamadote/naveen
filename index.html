@@ -87,17 +87,20 @@
 			</div>
 			<div class="list">
 				<div class="item item-2-3 slider">
+					<div class="slide slide-1"></div>
+					<div class="slide slide-2 selected"></div>
+					<div class="slide slide-3"></div>
 					<ul>
 						<li>
-							<input type="radio" id="slider-1" name="slider">
+							<input type="radio" id="slider-1" name="slider" onchange="slider()">
 							<label for="slider-1"></label>
 						</li>
 						<li>
-							<input type="radio" id="slider-2" name="slider" checked>
+							<input type="radio" id="slider-2" name="slider" onchange="slider()" checked>
 							<label for="slider-2"></label>
 						</li>
 						<li>
-							<input type="radio" id="slider-3" name="slider">
+							<input type="radio" id="slider-3" name="slider" onchange="slider()">
 							<label for="slider-3"></label>
 						</li>
 					</ul>

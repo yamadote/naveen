@@ -275,12 +275,29 @@
     position: relative;
     background-color: rgb(244, 244, 244);
     margin-right: 25px;
+    overflow: hidden;
+}
+
+.section.content .list .item.slider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.section.content .list .item.slider .slide.selected {
+    z-index: 2;
 }
 
 .section.content .list .item.slider ul {
     position: absolute;
     right: 16px;
     top: 150px;
+    z-index: 99;
 }
 
 .section.content .list .item.slider ul li {
@@ -299,6 +316,7 @@
     -moz-border-radius: 10px;
     border-radius: 10px;
     background-color: rgb(19, 189, 157);
+    box-shadow: 0 0 2px black;
 }
 
 .section.content .list .item.slider ul input[type="radio"]:checked ~ label {
@@ -539,6 +557,18 @@
 
 .social li a.dd {
     background-image: url(../img/social/dd.png);
+}
+
+.section.content .list .item.slider .slide-1 {
+    background-image: url("../assets/slide-1.jpg");
+}
+
+.section.content .list .item.slider .slide-2 {
+    background-image: url("../assets/slide-2.jpg");
+}
+
+.section.content .list .item.slider .slide-3 {
+    background-image: url("../assets/slide-3.jpg");
 }
 
 

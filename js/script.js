@@ -10,3 +10,14 @@ function onChangeHeaderDescription() {
         }
     }
 }
+
+function slider() {
+    let slides = document.getElementsByClassName('slide');
+    for (let i = 0; i < slides.length; i++) {
+        if (document.getElementById('slider-'+(i+1)).checked) {
+            slides[i].style.zIndex = 3;
+        } else {
+            slides[i].style.zIndex = 1;
+        }
+    }
+}
