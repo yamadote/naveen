@@ -151,6 +151,7 @@
 .nav-panel .social {
     float: right;
     margin-top: 9px;
+    padding-right: 6px;
     height: 34px;
     border-left: 1px solid rgba(0, 0, 0, 0.1);
     border-right: 1px solid rgba(0, 0, 0, 0.1);
@@ -160,9 +161,13 @@
     display: inline-block;
 }
 
-.nav-panel .social > li:last-child {
+.nav-panel .social .social-hidden {
     padding: 0px;
     height: 30px;
+}
+
+.nav-panel .social .social-hidden li:first-child {
+    padding-left: 11px;
 }
 
 .nav-panel .social li {
