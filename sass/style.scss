@@ -450,6 +450,72 @@ $font-stack:  'Roboto', sans-serif;
     }
 }
 
+.section.contact {
+    border-bottom: none;
+
+    .icon {
+        width: 65px;
+        height: 55px;
+    }
+
+    .main {
+        height: 390px;
+        display: flex;
+        flex-wrap: wrap;
+
+        form {
+            flex: 0 0 520px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            input, textarea {
+                display: block;
+                flex: 1 1 520px;
+                color: #939598;
+                font: normal 12px $font-stack;
+                padding-left: 8px;
+                padding-right: 8px;
+                border-color: 1px solid #ccc;
+            }
+
+            input {
+                height: 32px;
+                margin-bottom: 23px;
+            }
+
+            input[type='submit'] {
+                background-color: #1abc9c;
+                border: none;
+                color: white;
+                height: 40px;
+                flex: 0 0 150px;
+                margin-bottom: 10px;
+            }
+
+            textarea {
+                margin-bottom: 50px;
+                padding: 8px;
+                height: 160px;
+            }
+
+            .half {
+                flex: 0 1 228px;
+                margin-bottom: 12px;
+            }
+        }
+
+        .aside {
+            flex: 1 0 380px;
+            text-align: left;
+            padding-left: 40px;
+            color: #939598;
+            font: normal 12px $font-stack;
+        }
+    }
+}
+
 .info {
     max-width: 1150px;
     margin: 0 auto;
@@ -479,6 +545,7 @@ $font-stack:  'Roboto', sans-serif;
                 text-transform: uppercase;
                 font: bold 14px $font-stack;
                 text-align: center;
+                cursor: default;
             }
 
             .content {
@@ -508,6 +575,7 @@ $font-stack:  'Roboto', sans-serif;
         font: lighter 36px $font-stack;
         letter-spacing: 1px;
         text-transform: uppercase;
+        cursor: default;
 
         span {
             font-weight: bold;
@@ -517,6 +585,7 @@ $font-stack:  'Roboto', sans-serif;
     .description {
         font: lighter 12px $font-stack;
         letter-spacing: 0.5px;
+        cursor: default;
     }
 
     .button {
@@ -560,6 +629,7 @@ $font-stack:  'Roboto', sans-serif;
         font: normal 12px/22px $font-stack;
         letter-spacing: 0.3px;
         float: left;
+        cursor: default;
 
         a {
             color: #1abc9c;
