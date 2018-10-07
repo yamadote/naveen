@@ -464,6 +464,7 @@ table {
   margin-bottom: 50px;
   padding: 8px;
   height: 160px;
+  resize: none;
 }
 .section.contact .main form .half {
   flex: 0 1 228px;
