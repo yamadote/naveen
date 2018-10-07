@@ -317,7 +317,6 @@ table {
 }
 .section.content .item.aside .description {
   text-transform: uppercase;
-  height: fit-content;
   text-align: left;
   letter-spacing: 3px;
   margin-bottom: 50px;
@@ -328,11 +327,10 @@ table {
 .section.content .item.aside .description div input[type=radio] {
   display: none;
 }
-.section.content .item.aside .description div label, .section.content .item.aside .description div .message {
+.section.content .item.aside .description div label {
+  border-top: 1px solid #dcdddf;
   border-bottom: 1px solid #dcdddf;
   padding: 18px;
-}
-.section.content .item.aside .description div label {
   display: block;
 }
 .section.content .item.aside .description div label h3 {
@@ -344,25 +342,22 @@ table {
   color: #dddddd;
   font: normal 8px "Roboto", sans-serif;
 }
+.section.content .item.aside .description div input[type=radio]:checked ~ .message {
+  height: 123px;
+}
 .section.content .item.aside .description div .message {
-  display: none;
-}
-.section.content .item.aside .description div.active label h3 {
-  font: bold 8px "Roboto", sans-serif;
-}
-.section.content .item.aside .description div.active label span {
-  color: black;
-  font: normal 14px "Roboto", sans-serif;
-}
-.section.content .item.aside .description div.active .message {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
   display: block;
   color: #4c4c4c;
   letter-spacing: 1px;
-  font: normal 10px/22px "Roboto", sans-serif;
-  color: #4c4c4c;
   text-transform: none;
-  height: 87px;
-  overflow-x: auto;
+  font: normal 10px/22px "Roboto", sans-serif;
+  transition: all 1s ease-in-out;
+}
+.section.content .item.aside .description div .message .container {
+  padding: 18px;
 }
 .section.content .item.aside .additionally {
   position: absolute;

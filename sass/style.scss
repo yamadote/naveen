@@ -322,7 +322,6 @@ $font-stack:  'Roboto', sans-serif;
 
         .description {
             text-transform: uppercase;
-            height: fit-content;
             text-align: left;
             letter-spacing: 3px;
             margin-bottom: 50px;
@@ -333,12 +332,10 @@ $font-stack:  'Roboto', sans-serif;
                     display: none;
                 }
 
-                label, .message {
+                label {
+                    border-top: 1px solid rgb(220, 221, 223);
                     border-bottom: 1px solid rgb(220, 221, 223);
                     padding: 18px;
-                }
-
-                label {
                     display: block;
 
                     h3{
@@ -353,32 +350,35 @@ $font-stack:  'Roboto', sans-serif;
                     }
                 }
 
-                .message {
-                    display: none;
-                }
-            }
-
-            div.active {
-                label {
-                    h3{
-                        font: bold 8px $font-stack;
-                    }
-
-                    span {
-                        color: black;
-                        font: normal 14px $font-stack;
-                    }
+                input[type="radio"]:checked ~ .message {
+                    height: 87px + 18px * 2;
                 }
 
+                //input[type="radio"]:checked ~ label {
+                //    h3{
+                //        font: bold 8px $font-stack;
+                //    }
+                //
+                //    span {
+                //        color: black;
+                //        font: normal 14px $font-stack;
+                //    }
+                //}
+
                 .message {
+                    height: 0;
+                    padding: 0;
+                    overflow: hidden;
                     display: block;
                     color: #4c4c4c;
                     letter-spacing: 1px;
-                    font: normal 10px/22px $font-stack;
-                    color: #4c4c4c;
                     text-transform: none;
-                    height: 87px;
-                    overflow-x: auto;
+                    font: normal 10px/22px $font-stack;
+                    transition: all 1s ease-in-out;
+
+                    .container {
+                        padding: 18px;
+                    }
                 }
             }
         }
