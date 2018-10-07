@@ -85,21 +85,23 @@
 				<h2 class="title">Our <span>Content</span></h2>
 			</div>
 			<div class="list">
-				<div class="item slider">
-					<div class="slide slide-1" style="background-image: url(assets/slide-1.jpg);"></div>
-					<div class="slide slide-2 selected"  style="background-image: url(assets/slide-2.jpg);"></div>
-					<div class="slide slide-3"  style="background-image: url(assets/slide-3.jpg);"></div>
-					<ul>
+				<div class="item slider" id="slider">
+					<div class="slides">
+						<div class="slide" style="background-image: url(assets/slide-1.jpg);"></div>
+						<div class="slide"  style="background-image: url(assets/slide-2.jpg);"></div>
+						<div class="slide"  style="background-image: url(assets/slide-3.jpg);"></div>
+					</div>
+					<ul class="switches">
 						<li>
-							<input type="radio" id="slider-1" name="slider" onchange="slider()">
+							<input type="radio" id="slider-1" name="slider" onchange="slider('slider', 1)" checked>
 							<label for="slider-1"></label>
 						</li>
 						<li>
-							<input type="radio" id="slider-2" name="slider" onchange="slider()" checked>
+							<input type="radio" id="slider-2" name="slider" onchange="slider('slider', 2)">
 							<label for="slider-2"></label>
 						</li>
 						<li>
-							<input type="radio" id="slider-3" name="slider" onchange="slider()">
+							<input type="radio" id="slider-3" name="slider" onchange="slider('slider', 3)">
 							<label for="slider-3"></label>
 						</li>
 					</ul>

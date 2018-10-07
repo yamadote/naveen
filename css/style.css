@@ -272,32 +272,29 @@ table {
   background-color: #f4f4f4;
   overflow: hidden;
 }
-.section.content .item.slider .slide.selected {
-  z-index: 2;
+.section.content .item.slider .slides {
+  height: 100%;
+  width: 100%;
+  transition: margin-top 1s ease-in-out;
 }
-.section.content .item.slider .slide {
-  position: absolute;
-  top: 0;
-  left: 0;
+.section.content .item.slider .slides .slide {
   height: 100%;
   width: 100%;
   background-size: cover;
   background-position: center;
-  z-index: 1;
 }
-.section.content .item.slider ul {
+.section.content .item.slider .switches {
   position: absolute;
   right: 16px;
   top: 150px;
-  z-index: 99;
 }
-.section.content .item.slider ul li {
+.section.content .item.slider .switches li {
   margin-bottom: 14px;
 }
-.section.content .item.slider ul li input[type=radio] {
+.section.content .item.slider .switches li input[type=radio] {
   display: none;
 }
-.section.content .item.slider ul li label {
+.section.content .item.slider .switches li label {
   display: block;
   height: 10px;
   width: 10px;
@@ -309,7 +306,7 @@ table {
   -moz-box-shadow: 0 0 2px black;
   box-shadow: 0 0 2px black;
 }
-.section.content .item.slider ul li input[type=radio]:checked ~ label {
+.section.content .item.slider .switches li input[type=radio]:checked ~ label {
   background-color: black;
 }
 .section.content .item.aside {

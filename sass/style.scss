@@ -273,26 +273,23 @@ $font-stack:  'Roboto', sans-serif;
         background-color: rgb(244, 244, 244);
         overflow: hidden;
 
-        .slide.selected {
-            z-index: 2;
-        }
-
-        .slide {
-            position: absolute;
-            top: 0;
-            left: 0;
+        .slides {
             height: 100%;
             width: 100%;
-            background-size: cover;
-            background-position: center;
-            z-index: 1;
+            transition: margin-top 1s ease-in-out;
+
+            .slide {
+                height: 100%;
+                width: 100%;
+                background-size: cover;
+                background-position: center;
+            }
         }
 
-        ul {
+        .switches {
             position: absolute;
             right: 16px;
             top: 150px;
-            z-index: 99;
 
             li {
                 margin-bottom: 14px;
