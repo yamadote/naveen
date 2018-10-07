@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Title</title>
-	<link rel="stylesheet" href="css/reset.css" type="text/css"/>
 	<link rel="stylesheet" href="css/style.css" type="text/css"/>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
 </head>
@@ -26,7 +25,7 @@
 	</header>
 	<nav class="nav-panel">
 		<div class="page-layout">
-			<img src="img/logo.png" class="logo">
+			<a href="#"><img src="img/logo.png" class="logo"></a>
 			<ul class="navigation">
 				<li><a href="#"> Services </a></li>
 				<li><a href="#"> About </a></li>
@@ -57,20 +56,20 @@
 			<div class="top">
 				<div class="icon smile gray"></div>
 				<div class="description">Product features</div>
-				<h2>What we <span>do</span></h2>
+				<h2 class="title">What we <span>do</span></h2>
 			</div>
 			<div class="list">
-				<div class="item item-3">
+				<div class="item">
 					<div class="icon devises blue"></div>
 					<h3>Fully Responsive</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
 				</div>
-				<div class="item item-3">
+				<div class="item">
 					<div class="icon presentation purple"></div>
 					<h3>Easy to Customize</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
 				</div>
-				<div class="item item-3">
+				<div class="item">
 					<div class="icon bulb pink"></div>
 					<h3>Direct Support</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
@@ -83,10 +82,10 @@
 			<div class="top">
 				<div class="icon doc gray"></div>
 				<div class="description">Content description</div>
-				<h2>Our <span>Content</span></h2>
+				<h2 class="title">Our <span>Content</span></h2>
 			</div>
 			<div class="list">
-				<div class="item item-2-3 slider">
+				<div class="item slider">
 					<div class="slide slide-1"></div>
 					<div class="slide slide-2 selected"></div>
 					<div class="slide slide-3"></div>
@@ -105,7 +104,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="item item-1-3">
+				<div class="item aside">
 					<div class="description">
 						<div class="active">
 							<input type="radio" id="decription-1" name="description" onchange="onChangeHeaderDescription()">
@@ -159,10 +158,10 @@
 			<div class="top">
 				<div class="icon par gray"></div>
 				<div class="description">Choose your required service from here</div>
-				<h2>Servises We <span>Provide</span></h2>
+				<h2 class="title">Servises We <span>Provide</span></h2>
 			</div>
 			<div class="list">
-				<div class="item item-3 animate-text-to-left-hover animate-show-hover animate-hidden-hover">
+				<div class="item animate-text-to-left-hover animate-show-hover animate-hidden-hover">
 					<h3 class="animate-text-to-left">Web Design</h3>
 					<div class="icon doc gray animate-show"></div>
 					<ul class="animate-hidden">
@@ -171,7 +170,7 @@
 						<li><a href="#">Responsive Web Design</a></li>
 					</ul>
 				</div>
-				<div class="item item-3 animate-text-to-left-hover animate-show-hover animate-hidden-hover">
+				<div class="item animate-text-to-left-hover animate-show-hover animate-hidden-hover">
 					<h3 class="animate-text-to-left">Web Development</h3>
 					<div class="icon devises purple animate-show"></div>
 					<ul class="animate-hidden">
@@ -180,7 +179,7 @@
 						<li><a href="#">Responsive Web Design</a></li>
 					</ul>
 				</div>
-				<div class="item item-3 animate-text-to-left-hover animate-show-hover animate-hidden-hover">
+				<div class="item animate-text-to-left-hover animate-show-hover animate-hidden-hover">
 					<h3 class="animate-text-to-left">Web Maintenance</h3>
 					<div class="icon par pink animate-show"></div>
 					<ul class="animate-hidden">
@@ -189,7 +188,7 @@
 						<li><a href="#">Responsive Web Design</a></li>
 					</ul>
 				</div>
-				<div class="item item-3 animate-text-to-left-hover animate-show-hover animate-hidden-hover">
+				<div class="item animate-text-to-left-hover animate-show-hover animate-hidden-hover">
 					<h3 class="animate-text-to-left">Web Design</h3>
 					<div class="icon presentation blue animate-show"></div>
 					<ul class="animate-hidden">
@@ -198,7 +197,7 @@
 						<li><a href="#">Responsive Web Design</a></li>
 					</ul>
 				</div>
-				<div class="item item-3 animate-text-to-left-hover animate-show-hover animate-hidden-hover">
+				<div class="item animate-text-to-left-hover animate-show-hover animate-hidden-hover">
 					<h3 class="animate-text-to-left">Web Development</h3>
 					<div class="icon bulb green animate-show"></div>
 					<ul class="animate-hidden">
@@ -207,7 +206,7 @@
 						<li><a href="#">Responsive Web Design</a></li>
 					</ul>
 				</div>
-				<div class="item item-3 animate-text-to-left-hover animate-show-hover animate-hidden-hover">
+				<div class="item animate-text-to-left-hover animate-show-hover animate-hidden-hover">
 					<h3 class="animate-text-to-left">Web Maintenance</h3>
 					<div class="icon video tomato animate-show"></div>
 					<ul class="animate-hidden">
@@ -222,6 +221,8 @@
 	<footer class="footer">
 		<div class="page-layout">
 			<div class="footer-container">
+				<a href="#"><img src="img/logo.png" class="logo" width="62" height="30"></a>
+				<div class="copiright">© 2016 Infinite<br> Designed by <a href="#">Naveen</a></div>
 				<ul class="social">
 					<li><a class="fb" href="#"></a></li>
 					<li><a class="tt" href="#"></a></li>
@@ -233,8 +234,6 @@
 					<li><a class="pa" href="#"></a></li>
 					<li><a class="dd" href="#"></a></li>
 				</ul>
-				<img src="img/logo.png" class="logo" width="62" height="30">
-				<div class="copiright">© 2016 Infinite<br> Designed by <a href="#">Naveen</a></div>
 			</div>
 		</div>
 	</footer>
