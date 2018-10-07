@@ -450,6 +450,55 @@ $font-stack:  'Roboto', sans-serif;
     }
 }
 
+.info {
+    max-width: 1150px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+
+    .list {
+        display: flex;
+
+        .item {
+            height: 95px;
+            flex: 1 1 300px;
+            margin-top: 30px;
+            margin-bottom: 25px;
+
+            .icon {
+                width: 35px;
+                height: 35px;
+                margin: 0 auto 20px;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .title {
+                color: #4c4c4c;
+                margin-bottom: 6px;
+                text-transform: uppercase;
+                font: bold 14px $font-stack;
+                text-align: center;
+            }
+
+            .content {
+                color: #4c4c4c;
+                text-align: center;
+                font: normal 14px $font-stack;
+            }
+
+            .link {
+                color: #1abc9c;
+            }
+        }
+
+        .item:nth-child(2) {
+            border-left: 1px solid #818181;
+            border-right: 1px solid #818181;
+        }
+    }
+}
+
 .try-services {
     background-color: #1abc9c;
     color: white;
@@ -471,7 +520,8 @@ $font-stack:  'Roboto', sans-serif;
     }
 
     .button {
-        margin: 11px 70px;
+        margin-top: 11px;
+        margin-right: 90px;
         padding: 10px 20px;
         color: white;
         display: block;
@@ -639,6 +689,18 @@ $font-stack:  'Roboto', sans-serif;
 
 .icon.video {
     background-image: url("../img/icons/video.png");
+}
+
+.icon.phone {
+    background-image: url("../img/icons/phone.png");
+}
+
+.icon.clock {
+    background-image: url("../img/icons/clock.png");
+}
+
+.icon.messages {
+    background-image: url("../img/icons/messages.png");
 }
 
 .icon.gray {
