@@ -420,6 +420,35 @@ table {
   font-weight: bold;
 }
 
+.try-services {
+  background-color: #1abc9c;
+  color: white;
+  padding: 33px 0 38px;
+}
+.try-services .title {
+  font: lighter 36px "Roboto", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.try-services .title span {
+  font-weight: bold;
+}
+.try-services .description {
+  font: lighter 12px "Roboto", sans-serif;
+  letter-spacing: 0.5px;
+}
+.try-services .button {
+  margin: 11px 70px;
+  padding: 10px 20px;
+  color: white;
+  display: block;
+  float: right;
+  text-decoration: none;
+  border: 1px solid white;
+  font: lighter 12px "Roboto", sans-serif;
+  letter-spacing: 0.5px;
+}
+
 .footer {
   height: 110px;
   background-color: #252830;
