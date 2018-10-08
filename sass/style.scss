@@ -148,10 +148,10 @@ $font-stack:  'Roboto', sans-serif;
             font: normal 12px/48px $font-stack;
             color: #a69999;
             vertical-align: middle;
-        }
 
-        a:hover {
-            text-decoration: underline;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 
@@ -194,10 +194,9 @@ $font-stack:  'Roboto', sans-serif;
             }
         }
 
-    }
-
-    .social:hover .social-hidden {
-        width: 235px;
+        &:hover .social-hidden {
+            width: 235px;
+        }
     }
 }
 
@@ -437,16 +436,16 @@ $font-stack:  'Roboto', sans-serif;
                     color: black;
                     text-decoration: none;
                 }
-            }
 
-            li:hover {
-                background-color:  #f2f2f2;
+                &:hover {
+                    background-color:  #f2f2f2;
+                }
             }
         }
-    }
 
-    .item:hover h3{
-        font-weight: bold;
+        &:hover h3 {
+            font-weight: bold;
+        }
     }
 }
 
@@ -492,6 +491,7 @@ $font-stack:  'Roboto', sans-serif;
                 height: 40px;
                 flex: 0 0 150px;
                 margin-bottom: 10px;
+                cursor: pointer;
             }
 
             textarea {
@@ -611,7 +611,7 @@ $font-stack:  'Roboto', sans-serif;
         padding: 0 10px;
     }
 
-    .footer-container {
+    &-container {
         padding-top: 35px;
         height: 42px;
     }
@@ -634,11 +634,12 @@ $font-stack:  'Roboto', sans-serif;
 
         a {
             color: #1abc9c;
+            color: red;
             text-decoration: none;
-        }
 
-        a:hover {
-            text-decoration: underline;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 

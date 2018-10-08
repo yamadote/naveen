@@ -459,6 +459,7 @@ table {
   height: 40px;
   flex: 0 0 150px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .section.contact .main form textarea {
   margin-bottom: 50px;
@@ -560,7 +561,7 @@ table {
 .footer .page-layout {
   padding: 0 10px;
 }
-.footer .footer-container {
+.footer-container {
   padding-top: 35px;
   height: 42px;
 }
@@ -581,6 +582,7 @@ table {
 }
 .footer .copiright a {
   color: #1abc9c;
+  color: red;
   text-decoration: none;
 }
 .footer .copiright a:hover {
