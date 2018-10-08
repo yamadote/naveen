@@ -449,6 +449,37 @@ $font-stack:  'Roboto', sans-serif;
     }
 }
 
+
+.brands {
+    background-color: #f9f9f9;
+    height: 140px;
+
+    .page-layout {
+        height: 100%;
+    }
+
+    ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+            margin: auto 0;
+
+            span {
+                font: normal 22px $font-stack;
+                color: #1abc9c;
+            }
+
+            img {
+                height: 24px;
+            }
+        }
+    }
+}
+
 .section.contact {
     border-bottom: none;
 
@@ -634,7 +665,6 @@ $font-stack:  'Roboto', sans-serif;
 
         a {
             color: #1abc9c;
-            color: red;
             text-decoration: none;
 
             &:hover {
@@ -735,66 +765,69 @@ $font-stack:  'Roboto', sans-serif;
     }
 }
 
-.icon.smile {
-    background-image: url(../img/icons/smile.png);
+.icon {
+    &.smile {
+        background-image: url(../img/icons/smile.png);
+    }
+
+    &.devises {
+        background-image: url(../img/icons/devises.png);
+    }
+
+    &.presentation {
+        background-image: url(../img/icons/presentation.png);
+    }
+
+    &.bulb {
+        background-image: url(../img/icons/bulb.png);
+    }
+
+    &.doc {
+        background-image: url(../img/icons/doc.png);
+    }
+
+    &.par {
+        background-image: url("../img/icons/pencil and ruler.png");
+    }
+
+    &.video {
+        background-image: url("../img/icons/video.png");
+    }
+
+    &.phone {
+        background-image: url("../img/icons/phone.png");
+    }
+
+    &.clock {
+        background-image: url("../img/icons/clock.png");
+    }
+
+    &.messages {
+        background-image: url("../img/icons/messages.png");
+    }
+
+    &.gray {
+        filter: invert(29%) sepia(1%) saturate(1056%) hue-rotate(57deg) brightness(87%) contrast(82%);
+    }
+
+    &.blue {
+        filter: invert(47%) sepia(23%) saturate(3230%) hue-rotate(160deg) brightness(94%) contrast(105%);
+    }
+
+    &.green {
+        filter: invert(99%) sepia(3%) saturate(6697%) hue-rotate(20deg) brightness(79%) contrast(111%);
+    }
+
+    &.purple {
+        filter: invert(60%) sepia(25%) saturate(4905%) hue-rotate(227deg) brightness(86%) contrast(92%);
+    }
+
+    &.tomato {
+        filter: invert(48%) sepia(16%) saturate(1336%) hue-rotate(314deg) brightness(86%) contrast(90%);
+    }
+
+    &.pink {
+        filter: invert(43%) sepia(87%) saturate(3280%) hue-rotate(311deg) brightness(97%) contrast(95%);
+    }
 }
 
-.icon.devises {
-    background-image: url(../img/icons/devises.png);
-}
-
-.icon.presentation {
-    background-image: url(../img/icons/presentation.png);
-}
-
-.icon.bulb {
-    background-image: url(../img/icons/bulb.png);
-}
-
-.icon.doc {
-    background-image: url(../img/icons/doc.png);
-}
-
-.icon.par {
-    background-image: url("../img/icons/pencil and ruler.png");
-}
-
-.icon.video {
-    background-image: url("../img/icons/video.png");
-}
-
-.icon.phone {
-    background-image: url("../img/icons/phone.png");
-}
-
-.icon.clock {
-    background-image: url("../img/icons/clock.png");
-}
-
-.icon.messages {
-    background-image: url("../img/icons/messages.png");
-}
-
-.icon.gray {
-    filter: invert(29%) sepia(1%) saturate(1056%) hue-rotate(57deg) brightness(87%) contrast(82%);
-}
-
-.icon.blue {
-    filter: invert(47%) sepia(23%) saturate(3230%) hue-rotate(160deg) brightness(94%) contrast(105%);
-}
-
-.icon.green {
-    filter: invert(99%) sepia(3%) saturate(6697%) hue-rotate(20deg) brightness(79%) contrast(111%);
-}
-
-.icon.purple {
-    filter: invert(60%) sepia(25%) saturate(4905%) hue-rotate(227deg) brightness(86%) contrast(92%);
-}
-
-.icon.tomato {
-    filter: invert(48%) sepia(16%) saturate(1336%) hue-rotate(314deg) brightness(86%) contrast(90%);
-}
-
-.icon.pink {
-    filter: invert(43%) sepia(87%) saturate(3280%) hue-rotate(311deg) brightness(97%) contrast(95%);
-}
