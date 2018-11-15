@@ -449,6 +449,55 @@ $font-stack:  'Roboto', sans-serif;
     }
 }
 
+.section.our-features {
+    padding-bottom: 110px;
+
+    .buttons {
+        margin-bottom: 80px;
+
+        input[type=button] {
+            cursor: pointer;
+            margin: 3px;
+            border: none;
+            height: 40px;
+            padding: 0 30px;
+            background-color: white;
+            @include box-shadow(0px 0px 3px 0px rgba(0,0,0,0.3));
+            text-transform: uppercase;
+            color: #777777;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+            font: normal 12px "Roboto", sans-serif;
+
+            &.active {
+                background-color:  #1abc9c;
+                color: white;
+            }
+        }
+    }
+
+    .list .item {
+        height: 250px;
+        width: 440px;
+
+        &.description {
+            box-sizing: border-box;
+            padding: 45px 0 0 70px;
+            text-align: left;
+
+            h3 {
+                font: normal 22px "Roboto", sans-serif;
+                color: #4c4c4c;
+                padding-bottom: 15px;
+            }
+
+            p {
+                font: normal 13px/20px "Roboto", sans-serif;
+                color: #b0b1b3;
+            }
+        }
+    }
+}
 
 .brands {
     background-color: #f9f9f9;
@@ -507,7 +556,7 @@ $font-stack:  'Roboto', sans-serif;
                 font: normal 12px $font-stack;
                 padding-left: 8px;
                 padding-right: 8px;
-                border-color: 1px solid #ccc;
+                border: 1px solid #ccc;
             }
 
             input {
@@ -784,6 +833,10 @@ $font-stack:  'Roboto', sans-serif;
 
     &.doc {
         background-image: url(../img/icons/doc.png);
+    }
+
+    &.atom {
+        background-image: url(../img/icons/atom.png);
     }
 
     &.par {

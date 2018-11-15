@@ -420,6 +420,51 @@ table {
   font-weight: bold;
 }
 
+.section.our-features {
+  padding-bottom: 110px;
+}
+.section.our-features .buttons {
+  margin-bottom: 80px;
+}
+.section.our-features .buttons input[type=button] {
+  cursor: pointer;
+  margin: 3px;
+  border: none;
+  height: 40px;
+  padding: 0 30px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  color: #777777;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  font: normal 12px "Roboto", sans-serif;
+}
+.section.our-features .buttons input[type=button].active {
+  background-color: #1abc9c;
+  color: white;
+}
+.section.our-features .list .item {
+  height: 250px;
+  width: 440px;
+}
+.section.our-features .list .item.description {
+  box-sizing: border-box;
+  padding: 45px 0 0 70px;
+  text-align: left;
+}
+.section.our-features .list .item.description h3 {
+  font: normal 22px "Roboto", sans-serif;
+  color: #4c4c4c;
+  padding-bottom: 15px;
+}
+.section.our-features .list .item.description p {
+  font: normal 13px/20px "Roboto", sans-serif;
+  color: #b0b1b3;
+}
+
 .brands {
   background-color: #f9f9f9;
   height: 140px;
@@ -471,7 +516,7 @@ table {
   font: normal 12px "Roboto", sans-serif;
   padding-left: 8px;
   padding-right: 8px;
-  border-color: 1px solid #ccc;
+  border: 1px solid #ccc;
 }
 .section.contact .main form input {
   height: 32px;
@@ -705,6 +750,9 @@ table {
 }
 .icon.doc {
   background-image: url(../img/icons/doc.png);
+}
+.icon.atom {
+  background-image: url(../img/icons/atom.png);
 }
 .icon.par {
   background-image: url("../img/icons/pencil and ruler.png");
